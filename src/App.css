@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Apply to any dashboard header container */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between; /* keeps right/left elements in place */
+  align-items: center;
+  position: relative;             /* needed for absolute heading */
+  margin-bottom: 30px;
+}
+
+/* Center the heading text in the header */
+.dashboard-header h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  white-space: nowrap; /* prevents wrapping on smaller screens */
+}

@@ -1,0 +1,96 @@
+/* ================= CONTAINER ================= */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background:white; /* Dark navy background */
+  transition: background 0.5s;
+}
+
+/* ================= AUTH CARD ================= */
+.auth-card {
+  padding: 40px;
+  background: linear-gradient(145deg, #12124d, #1a1a60); /* subtle gradient */
+  border-radius: 15px;
+  width: 360px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* glowing shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #e0e0ff;
+  border: 1px solid #30306f;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card hover effect */
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(0, 191, 255, 0.7); /* glow on hover */
+}
+
+/* ================= INPUTS ================= */
+.auth-card input,
+.auth-card select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #5555aa;
+  border-radius: 8px;
+  background: #1a1a60;
+  color: #e0e0ff;
+  transition: 0.3s;
+}
+
+/* Placeholder text */
+.auth-card input::placeholder {
+  color: #b0b0d0;
+}
+
+/* Focus effect for inputs */
+.auth-card input:focus,
+.auth-card select:focus {
+  outline: none;
+  border-color: #00d0ff; /* cyan highlight */
+  box-shadow: 0 0 10px #00d0ff80; /* glowing shadow */
+  background: #1e1e70;
+}
+
+/* ================= BUTTONS ================= */
+.auth-card button {
+  padding: 12px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00bfff, #00d0ff);
+  color: #0a0a23;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 191, 255, 0.4);
+}
+
+/* Hover effect for buttons */
+.auth-card button:hover {
+  background: linear-gradient(90deg, #00d0ff, #00a1cc);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.6);
+}
+
+/* ================= LINKS ================= */
+.auth-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #b0b0d0;
+}
+
+.auth-links a {
+  color: #00bfff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+  color: #00d0ff;
+}
